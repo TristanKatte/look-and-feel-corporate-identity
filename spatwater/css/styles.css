@@ -1,5 +1,31 @@
 :root {
-    /* primary colors */
+    /* Groentinten */
+--groen-100:#4ECD5D;
+--groen-200: #3FB64E;
+--groen-300: #71DB7D;
+--groen-400: #79BC80;
+--groen-500: #79BC80;
+
+/* Grijstinten */
+--primair-wit:#FFFFFF;
+--gray-100: #D8D8D8;
+--gray-200: #EFEFEF;
+--gray-300: #333333;
+
+/* Blauwtinten */
+--blue-100: #3D5066;
+--blue-200: #25364B;
+--blue-300: #213247;
+
+/* font-sizes */
+--heading-xl: 5em;
+--heading-large:  3.5em;
+--heading-small:  2em;
+--body-xl:  1.8em;
+--body-large:  1.5em;
+--body-small: 1em;
+
+/* breakpoints */
 
 }
 

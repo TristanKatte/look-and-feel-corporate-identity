@@ -20,6 +20,7 @@
 /* font-sizes */
 --font-heading: 'Raleway', sans-serif;
 --font-body: 'Work Sans', sans-serif;
+--hero-text: 3.5em;
 --heading-xl: 1.6rem;
 --heading-large: 1.5rem;
 --heading-small:  1rem;
@@ -45,6 +46,12 @@
     * {
         margin: 0;
         padding: 0;
+
+    }
+
+    body, html {
+        height: 100%;
+        width: 100%;
     }
 
     nav {
@@ -141,7 +148,7 @@
         right: 10%;
         transform: translate(10%, 200px);
         color: white;
-        font-size: var(--heading-large);
+        font-size: var(--hero-text);
         font-family: var(--font-heading);
         
       }

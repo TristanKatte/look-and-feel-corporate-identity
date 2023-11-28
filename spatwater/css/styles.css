@@ -20,7 +20,7 @@
 /* font-sizes */
 --font-heading: 'Raleway', sans-serif;
 --font-body: 'Work Sans', sans-serif;
---hero-text: 3.5em;
+--hero-text: 3em;
 --heading-xl: 1.6rem;
 --heading-large: 1.5rem;
 --heading-small:  1rem;
@@ -34,6 +34,11 @@
 
 /* line-height */
 --space-between: 1.8;
+
+/* witruimtes */
+--spacing-xl: 5em;
+--spacing-large: 2em;
+--spacing-xs: 1.5em;
 
 /* breakpoints */
 --tablet-breakpoint: 768px;
@@ -134,11 +139,12 @@
       .hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
           url("../assets/vallende-regen.jpg");
-        height: 95%;
+        height: 50%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        
       }
       
       .hero-text {
@@ -178,18 +184,19 @@
         line-height: 2;
         background-color: #fff;
         padding: 1.5em; 
-        display: flex;
+        /* display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        flex-wrap: nowrap;
-        margin: auto;
+        flex-wrap: nowrap; */
+        margin: var(--spacing-xl);
         padding: 1.4em;
     }
     
     article:nth-child(2){
      background-color: #AEDBAB;
      color: #44686F;
+     padding: var(--spacing-xl);
     }
     
     section {

@@ -2,7 +2,7 @@
 Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
 De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
+B-rain website gebouwd met behulp van custom properties in css
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Beschrijving

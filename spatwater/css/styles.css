@@ -46,17 +46,110 @@
 
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #dddddd;
+  font-family: "Work Sans", sans-serif;
+  align-items: center;
+}
+
+nav img {
+  width: 195px;
+  margin: 0.8em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li a {
+  padding: 1em;
+  text-decoration: none;
+  list-style-type: none;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #ececec;
+  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.topnav a {
+  color: #7faec5;
+  text-decoration: none;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active:hover {
+  background-color: #0989c9;
+  color: #fff;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/vallende-regen.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 55%;
+  right: 0%;
+  transform: translate(-10%, -0%);
+  color: white;
+  font-size: 7em;
+  /* font-family: "Audiowide", cursive; */
+  font-family: "Gabarito", cursive;
+}
+
 @media only screen and (max-width: 600px){
     
     * {
-        margin: 0;
-        padding: 0;
+
+        box-sizing: border-box;
 
     }
 
     body, html {
-        height: 100%;
-        width: 100%;
+      margin: 0;
+      padding: 0;
+        min-height: 100%;
+        min-width: 100%;
     }
 
     nav {
@@ -166,7 +259,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         flex: 1;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
     }
     
@@ -184,19 +277,20 @@
         line-height: 2;
         background-color: #fff;
         padding: 1.5em; 
-        /* display: flex;
+        display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        flex-wrap: nowrap; */
+        flex-wrap: nowrap;
         margin: var(--spacing-xl);
         padding: 1.4em;
     }
     
     article:nth-child(2){
-     background-color: #AEDBAB;
-     color: #44686F;
+     background-color: var(--groen-500);
+     color: var(--blue-100);
      padding: var(--spacing-xl);
+     border-radius: 2em;
     }
     
     section {
@@ -216,9 +310,32 @@
     }
     
     figure img {
-        border-radius: 25px 250px 250px 250px;
-        width: 350px;
+        border-radius: 2.5em;
+        max-width: 350px;
         height: 350px;
+    }
+
+    aside {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1.2em;
+      background-color: var(--blue-100);
+      color: var(--primair-wit);
+      width: 100%;
+      border-radius: 2em;
+      line-height: var(--space-between);
+      margin: 0 auto;
+      margin-top: var(--spacing-xl);
+    }
+
+    .app {
+      margin: var(--spacing-large);
+      border-radius: 1.5em;
+      max-width: 300px;
+      border-radius: 1.2em;
     }
     
     .article-grid  {
@@ -261,15 +378,20 @@
     }
     
     .snippet {
-      border-radius: 25px 250px 250px 250px;
-      width: 200px;
-      height: 200px;
-      margin: 1em;
+      border-radius: .5em;
+      max-width: 360px;
+      height: 160px;
+      margin: var(--spacing-large);
+      padding: 1.5em;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
       color: #242424;
       border: 3px solid #44686F;
       background-color: #7faec5;
-      font-size: 0.8em;
+      font-size: var(--font-body);
+    }
+
+    .snippet > h5 {
+      font-size: var(--heading-small);
     }
     
     form {
@@ -336,3 +458,4 @@
     
     
 }
+

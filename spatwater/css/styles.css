@@ -204,15 +204,15 @@ p {
 
 figure {
   border-radius: 25px 250px 250px 250px;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   margin-top: 1.5em;
 }
 
 figure img {
-  border-radius: 25px 250px 250px 250px;
-  width: 400px;
-  height: 400px;
+  border-radius: 2em;
+  width: 600px;
+  height: 600px;
 }
 
 aside {
